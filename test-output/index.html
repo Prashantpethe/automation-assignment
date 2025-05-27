@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
+    <script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
+      <br/>
+      <span class="top-banner-font-1">1 suite, 4 failed tests</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" panel-name="suite-Automation_Practice_Test_Suite" class="navigator-link">
+              <span class="suite-name border-failed">Automation Practice Test Suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" panel-name="test-xml-Automation_Practice_Test_Suite" class="navigator-link ">
+                    <span>C:\Users\Soberr\Desktop\SDET with Jatin\automation-assignment\testng.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="testlist-Automation_Practice_Test_Suite" class="navigator-link ">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="group-Automation_Practice_Test_Suite" class="navigator-link ">
+                    <span>2 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="times-Automation_Practice_Test_Suite" class="navigator-link ">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="reporter-Automation_Practice_Test_Suite" class="navigator-link ">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="ignored-methods-Automation_Practice_Test_Suite" class="navigator-link ">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="chronological-Automation_Practice_Test_Suite" class="navigator-link ">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">9 methods, 4 failed,  3 skipped,  2 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Automation_Practice_Test_Suite" class="hide-methods failed suite-Automation_Practice_Test_Suite"> (hide)</a> <!-- hide-methods failed suite-Automation_Practice_Test_Suite -->
+                      <a href="#" panel-name="suite-Automation_Practice_Test_Suite" class="show-methods failed suite-Automation_Practice_Test_Suite"> (show)</a> <!-- show-methods failed suite-Automation_Practice_Test_Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Automation_Practice_Test_Suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Automation_Practice_Test_Suite" title="com.ui.tests.LoginTest" class="method navigator-link" hash-for-method="login(User [emailAdddress=prashantpethe7@gmail.com, password=password])">login(User [emailAdddress=prashantpethe7@gmail.com, password=password])</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Automation_Practice_Test_Suite" title="com.ui.tests.LoginTest" class="method navigator-link" hash-for-method="loginCSVTest(User [emailAdddress=prashantpethe7@gmail.com, password=pass1234])">loginCSVTest(User [emailAdddress=prashantpethe7@gmail.com, password=pass1234])</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Automation_Practice_Test_Suite" title="com.ui.tests.LoginTest" class="method navigator-link" hash-for-method="loginCSVTest(User [emailAdddress=sogeh70447@harinv.com, password=passwo])">loginCSVTest(User [emailAdddress=sogeh70447@harinv.com, password=passwo])</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Automation_Practice_Test_Suite" title="com.ui.tests.LoginTest" class="method navigator-link" hash-for-method="loginExcelTest(User [emailAdddress=sogeh70447@harinv.com, password=password])">loginExcelTest(User [emailAdddress=sogeh70447@harinv.com, password=password])</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Automation_Practice_Test_Suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title skipped">Retried methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-Automation_Practice_Test_Suite" class="hide-methods skipped suite-Automation_Practice_Test_Suite"> (hide)</a> <!-- hide-methods skipped suite-Automation_Practice_Test_Suite -->
+                      <a href="#" panel-name="suite-Automation_Practice_Test_Suite" class="show-methods skipped suite-Automation_Practice_Test_Suite"> (show)</a> <!-- show-methods skipped suite-Automation_Practice_Test_Suite -->
+                    </span>
+                    <div class="method-list-content skipped suite-Automation_Practice_Test_Suite">
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Automation_Practice_Test_Suite" title="com.ui.tests.LoginTest" class="method navigator-link" hash-for-method="loginExcelTest(User [emailAdddress=sogeh70447@harinv.com, password=password])">loginExcelTest(User [emailAdddress=sogeh70447@harinv.com, password=password])</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Automation_Practice_Test_Suite" title="com.ui.tests.LoginTest" class="method navigator-link" hash-for-method="loginExcelTest(User [emailAdddress=sogeh70447@harinv.com, password=password])">loginExcelTest(User [emailAdddress=sogeh70447@harinv.com, password=password])</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Automation_Practice_Test_Suite" title="com.ui.tests.LoginTest" class="method navigator-link" hash-for-method="loginExcelTest(User [emailAdddress=sogeh70447@harinv.com, password=password])">loginExcelTest(User [emailAdddress=sogeh70447@harinv.com, password=password])</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content skipped suite-Automation_Practice_Test_Suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Automation_Practice_Test_Suite" class="hide-methods passed suite-Automation_Practice_Test_Suite"> (hide)</a> <!-- hide-methods passed suite-Automation_Practice_Test_Suite -->
+                      <a href="#" panel-name="suite-Automation_Practice_Test_Suite" class="show-methods passed suite-Automation_Practice_Test_Suite"> (show)</a> <!-- show-methods passed suite-Automation_Practice_Test_Suite -->
+                    </span>
+                    <div class="method-list-content passed suite-Automation_Practice_Test_Suite">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Automation_Practice_Test_Suite" title="com.ui.tests.LoginTest" class="method navigator-link" hash-for-method="login(User [emailAdddress=sogeh70447@harinv.com, password=password])">login(User [emailAdddress=sogeh70447@harinv.com, password=password])</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Automation_Practice_Test_Suite" title="com.ui.tests.LoginTest" class="method navigator-link" hash-for-method="loginCSVTest(User [emailAdddress=sogeh70447@harinv.com, password=password])">loginCSVTest(User [emailAdddress=sogeh70447@harinv.com, password=password])</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Automation_Practice_Test_Suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Automation_Practice_Test_Suite" class="panel Automation_Practice_Test_Suite">
+          <div class="suite-Automation_Practice_Test_Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.ui.tests.LoginTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="login(User [emailAdddress=prashantpethe7@gmail.com, password=password])">
+                  </a> <!-- login(User [emailAdddress=prashantpethe7@gmail.com, password=password]) -->
+                  <span class="method-name">login</span>
+                  <span class="parameters">(User [emailAdddress=prashantpethe7@gmail.com, password=password])</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[@title=&apos;View my customer account&apos;]/span&quot;}
+  (Session info: chrome=136.0.7103.114)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.25.0&apos;, revision: &apos;8a8aea2337&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.7&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [9da33348e4fac0eb60872c6948e4903e, findElement {value=//a[@title=&apos;View my customer account&apos;]/span, using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 136.0.7103.114, chrome: {chromedriverVersion: 136.0.7103.113 (76fa3c17824..., userDataDir: C:\Users\Soberr\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59720}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59720/devtoo..., se:cdpVersion: 136.0.7103.114, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 9da33348e4fac0eb60872c6948e4903e
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at com.utility.BrowserUtility.getVisibleText(BrowserUtility.java:97)
+	at com.ui.pages.MyAccountPage.getUserName(MyAccountPage.java:17)
+	at com.ui.tests.LoginTest.login(LoginTest.java:47)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 14 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Verifies if the valid user is able to login intothe application)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginCSVTest(User [emailAdddress=prashantpethe7@gmail.com, password=pass1234])">
+                  </a> <!-- loginCSVTest(User [emailAdddress=prashantpethe7@gmail.com, password=pass1234]) -->
+                  <span class="method-name">loginCSVTest</span>
+                  <span class="parameters">(User [emailAdddress=prashantpethe7@gmail.com, password=pass1234])</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[@title=&apos;View my customer account&apos;]/span&quot;}
+  (Session info: chrome=136.0.7103.114)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.25.0&apos;, revision: &apos;8a8aea2337&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.7&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [72bcb50ca405932ab481af0a5c25720d, findElement {value=//a[@title=&apos;View my customer account&apos;]/span, using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 136.0.7103.114, chrome: {chromedriverVersion: 136.0.7103.113 (76fa3c17824..., userDataDir: C:\Users\Soberr\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59717}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59717/devtoo..., se:cdpVersion: 136.0.7103.114, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 72bcb50ca405932ab481af0a5c25720d
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at com.utility.BrowserUtility.getVisibleText(BrowserUtility.java:97)
+	at com.ui.pages.MyAccountPage.getUserName(MyAccountPage.java:17)
+	at com.ui.tests.LoginTest.loginCSVTest(LoginTest.java:54)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 14 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Verifies if the valid user is able to login intothe application)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginCSVTest(User [emailAdddress=sogeh70447@harinv.com, password=passwo])">
+                  </a> <!-- loginCSVTest(User [emailAdddress=sogeh70447@harinv.com, password=passwo]) -->
+                  <span class="method-name">loginCSVTest</span>
+                  <span class="parameters">(User [emailAdddress=sogeh70447@harinv.com, password=passwo])</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[@title=&apos;View my customer account&apos;]/span&quot;}
+  (Session info: chrome=136.0.7103.114)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.25.0&apos;, revision: &apos;8a8aea2337&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.7&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [2a637d62d05e3dfdf11cdf0d7a834796, findElement {value=//a[@title=&apos;View my customer account&apos;]/span, using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 136.0.7103.114, chrome: {chromedriverVersion: 136.0.7103.113 (76fa3c17824..., userDataDir: C:\Users\Soberr\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59881}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59881/devtoo..., se:cdpVersion: 136.0.7103.114, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 2a637d62d05e3dfdf11cdf0d7a834796
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at com.utility.BrowserUtility.getVisibleText(BrowserUtility.java:97)
+	at com.ui.pages.MyAccountPage.getUserName(MyAccountPage.java:17)
+	at com.ui.tests.LoginTest.loginCSVTest(LoginTest.java:54)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 14 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Verifies if the valid user is able to login intothe application)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginExcelTest(User [emailAdddress=sogeh70447@harinv.com, password=password])">
+                  </a> <!-- loginExcelTest(User [emailAdddress=sogeh70447@harinv.com, password=password]) -->
+                  <span class="method-name">loginExcelTest</span>
+                  <span class="parameters">(User [emailAdddress=sogeh70447@harinv.com, password=password])</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [Prashant Pethe1] but found [Prashant Pethe]
+	at com.ui.tests.LoginTest.loginExcelTest(LoginTest.java:62)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 17 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Verifies if the valid user is able to login intothe application)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Automation_Practice_Test_Suite-class-failed -->
+          <div class="suite-Automation_Practice_Test_Suite-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">com.ui.tests.LoginTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginExcelTest(User [emailAdddress=sogeh70447@harinv.com, password=password])">
+                  </a> <!-- loginExcelTest(User [emailAdddress=sogeh70447@harinv.com, password=password]) -->
+                  <span class="method-name">loginExcelTest</span>
+                  <span class="parameters">(User [emailAdddress=sogeh70447@harinv.com, password=password])</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [Prashant Pethe1] but found [Prashant Pethe]
+	at com.ui.tests.LoginTest.loginExcelTest(LoginTest.java:62)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 17 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Verifies if the valid user is able to login intothe application)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginExcelTest(User [emailAdddress=sogeh70447@harinv.com, password=password])">
+                  </a> <!-- loginExcelTest(User [emailAdddress=sogeh70447@harinv.com, password=password]) -->
+                  <span class="method-name">loginExcelTest</span>
+                  <span class="parameters">(User [emailAdddress=sogeh70447@harinv.com, password=password])</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [Prashant Pethe1] but found [Prashant Pethe]
+	at com.ui.tests.LoginTest.loginExcelTest(LoginTest.java:62)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 17 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Verifies if the valid user is able to login intothe application)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginExcelTest(User [emailAdddress=sogeh70447@harinv.com, password=password])">
+                  </a> <!-- loginExcelTest(User [emailAdddress=sogeh70447@harinv.com, password=password]) -->
+                  <span class="method-name">loginExcelTest</span>
+                  <span class="parameters">(User [emailAdddress=sogeh70447@harinv.com, password=password])</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [Prashant Pethe1] but found [Prashant Pethe]
+	at com.ui.tests.LoginTest.loginExcelTest(LoginTest.java:62)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 17 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Verifies if the valid user is able to login intothe application)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Automation_Practice_Test_Suite-class-skipped -->
+          <div class="suite-Automation_Practice_Test_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.ui.tests.LoginTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="login(User [emailAdddress=sogeh70447@harinv.com, password=password])">
+                  </a> <!-- login(User [emailAdddress=sogeh70447@harinv.com, password=password]) -->
+                  <span class="method-name">login</span>
+                  <span class="parameters">(User [emailAdddress=sogeh70447@harinv.com, password=password])</span>
+                  <em>
+(Verifies if the valid user is able to login intothe application)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginCSVTest(User [emailAdddress=sogeh70447@harinv.com, password=password])">
+                  </a> <!-- loginCSVTest(User [emailAdddress=sogeh70447@harinv.com, password=password]) -->
+                  <span class="method-name">loginCSVTest</span>
+                  <span class="parameters">(User [emailAdddress=sogeh70447@harinv.com, password=password])</span>
+                  <em>
+(Verifies if the valid user is able to login intothe application)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Automation_Practice_Test_Suite-class-passed -->
+        </div> <!-- panel Automation_Practice_Test_Suite -->
+        <div panel-name="test-xml-Automation_Practice_Test_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">C:\Users\Soberr\Desktop\SDET with Jatin\automation-assignment\testng.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite thread-count=&quot;8&quot; parallel=&quot;methods&quot; name=&quot;Automation Practice Test Suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+  &lt;test thread-count=&quot;8&quot; parallel=&quot;methods&quot; name=&quot;UI Automation Test&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.ui.tests.LoginTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- UI Automation Test --&gt;
+&lt;/suite&gt; &lt;!-- Automation Practice Test Suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Automation_Practice_Test_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Automation Practice Test Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">UI Automation Test (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Automation_Practice_Test_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Automation Practice Test Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="test-group">
+              <span class="test-group-name">e2e</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">login</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">loginCSVTest</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">loginExcelTest</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+            <div class="test-group">
+              <span class="test-group-name">sanity</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">login</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">loginCSVTest</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">loginExcelTest</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Automation_Practice_Test_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Automation Practice Test Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Automation_Practice_Test_Suite');
+function tableData_Automation_Practice_Test_Suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(9);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'loginExcelTest')
+data.setCell(0, 2, 'com.ui.tests.LoginTest')
+data.setCell(0, 3, 8445);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'loginExcelTest')
+data.setCell(1, 2, 'com.ui.tests.LoginTest')
+data.setCell(1, 3, 7500);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'loginExcelTest')
+data.setCell(2, 2, 'com.ui.tests.LoginTest')
+data.setCell(2, 3, 7365);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'login')
+data.setCell(3, 2, 'com.ui.tests.LoginTest')
+data.setCell(3, 3, 5255);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'loginCSVTest')
+data.setCell(4, 2, 'com.ui.tests.LoginTest')
+data.setCell(4, 3, 4705);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'login')
+data.setCell(5, 2, 'com.ui.tests.LoginTest')
+data.setCell(5, 3, 3950);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'loginCSVTest')
+data.setCell(6, 2, 'com.ui.tests.LoginTest')
+data.setCell(6, 3, 3732);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'loginExcelTest')
+data.setCell(7, 2, 'com.ui.tests.LoginTest')
+data.setCell(7, 3, 3378);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'loginCSVTest')
+data.setCell(8, 2, 'com.ui.tests.LoginTest')
+data.setCell(8, 3, 2851);
+window.suiteTableData['Automation_Practice_Test_Suite']= { tableData: data, tableDiv: 'times-div-Automation_Practice_Test_Suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 47 seconds</span>
+              <div id="times-div-Automation_Practice_Test_Suite">
+              </div> <!-- times-div-Automation_Practice_Test_Suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Automation_Practice_Test_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Automation Practice Test Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Automation_Practice_Test_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Automation_Practice_Test_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.ui.tests.LoginTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">67 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">2045 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">loginExcelTest(User [emailAdddress=sogeh70447@harinv.com, password=password])</span>
+                <span class="method-start">8808 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">login(User [emailAdddress=prashantpethe7@gmail.com, password=password])</span>
+                <span class="method-start">10014 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">loginCSVTest(User [emailAdddress=prashantpethe7@gmail.com, password=pass1234])</span>
+                <span class="method-start">10377 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">14523 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">14524 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">16332 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">login(User [emailAdddress=sogeh70447@harinv.com, password=password])</span>
+                <span class="method-start">24725 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">loginCSVTest(User [emailAdddress=sogeh70447@harinv.com, password=password])</span>
+                <span class="method-start">25326 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">loginExcelTest(User [emailAdddress=sogeh70447@harinv.com, password=password])</span>
+                <span class="method-start">29145 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">30038 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">37596 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">loginCSVTest(User [emailAdddress=sogeh70447@harinv.com, password=passwo])</span>
+                <span class="method-start">40406 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">loginExcelTest(User [emailAdddress=sogeh70447@harinv.com, password=password])</span>
+                <span class="method-start">52821 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">60192 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">loginExcelTest(User [emailAdddress=sogeh70447@harinv.com, password=password])</span>
+                <span class="method-start">70564 ms</span>
+              </div> <!-- test-method -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+<script type="text/javascript" src="testng-reports2.js"></script>
+</html>

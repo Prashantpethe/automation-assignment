@@ -1,47 +1,71 @@
 package com.ui.tests;
 
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
+import static com.constants.Browser.*; //note this line 3:35:00 framework part 1, static imports
 
-public class LoginTest {
+import static org.testng.Assert.*;
 
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+import org.apache.logging.log4j.Logger;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Listeners;
+import org.testng.annotations.Test;
 
-		WebDriver wd = new ChromeDriver();// browser session is created
-		wd.get("https://www.automationpractice.pl/index.php");
-		wd.manage().window().maximize();//chaining of methods
-		
-		By signInLinkLocator = By.xpath("//a[contains(text(),'Sign in')]");
-		//no such element  exception exception and invalid selector exception
-		WebElement signInLinkWebElement=wd.findElement(signInLinkLocator); // find the element
-		signInLinkWebElement.click();
-		
-		By emailTextBoxLocator = By.id("email");
-		WebElement emailTextBoxWebElement = wd.findElement(emailTextBoxLocator);
-		emailTextBoxWebElement.sendKeys("sogeh70447@harinv.com");
-		
-		By passwordTextBoxLocator = By.id("passwd");
-		WebElement passwordTextBoxWebElement = wd.findElement(passwordTextBoxLocator);
-		passwordTextBoxWebElement.sendKeys("password");
-		
-		By submitLoginButtonLocator = By.id("SubmitLogin");
-		WebElement submitLoginButtonWebElement = wd.findElement(submitLoginButtonLocator);
-		submitLoginButtonWebElement.click();
-		
-		//bad practices in above script 
-		//1 hard coding
-		//2duplicate code
-		//3.TestData is directly attached to script
-		//4. Variable name is not correct e.g wd
-		//5 Excepion handling is not there
-		//6 Synchronization - we are not supposed to use wd.findelement we have to use explicit wait bcz findele is not sync
-		//7 Assertion is missing
-		//8 Abstraction is not taken care , need to create wrapper methods over selenium methods
-		
-		
+//control shift O remove unused imports
+import com.ui.pages.HomePage;
+import com.ui.pojo.User;
+import com.utility.LoggerUtility;
+
+@Listeners({com.ui.listeners.TestListeners.class})
+public class LoginTest extends TestBase {
+
+//	HomePage homePage;// instance variable
+//	Logger logger = LoggerUtility.getLogger(this.getClass());
+
+//	@BeforeMethod(description = "load the homepage of the website")
+//	public void setup() {
+//		homePage = new HomePage(CHROME);
+//		logger.info("load the homepage of the website");
+//	}
+
+	@Test(description = "Verifies if the valid user is able to login intothe application", groups = { "e2e",
+			"sanity" }, dataProviderClass = com.ui.dataproviders.LoginDataProvider.class, dataProvider = "LoginTestDataProvider")
+	public void login(User user) {
+		/*
+		 * Rules to write good script 1. Test script needs to be small 2.You cannot have
+		 * conditional statement, loops, try catch in your test methods. Test script
+		 * should follow test steps not any logic 3. Reduce use of local variables
+		 * 4.Atleast one assertion
+		 * 
+		 */
+
+		// HomePage homePage = new HomePage(CHROME); //this is not test , this is
+		// pre-requistite so move it out of this
+		// String userName=homePage.goToLoginPage().doLoginWith("sogeh70447@harinv.com",
+		// "password").getUserName();
+		// Assert.assertEquals(userName, "Prashant Pethe");
+
+		assertEquals(homePage.goToLoginPage().doLoginWith(user.getEmailAdddress(), user.getPassword()).getUserName(),
+				"Prashant Pethe");
+	}
+
+	@Test(description = "Verifies if the valid user is able to login intothe application", groups = { "e2e",
+			"sanity" }, dataProviderClass = com.ui.dataproviders.LoginDataProvider.class, dataProvider = "LoginTestCSVdataProvider")
+	public void loginCSVTest(User user) {
+		assertEquals(homePage.goToLoginPage().doLoginWith(user.getEmailAdddress(), user.getPassword()).getUserName(),
+				"Prashant Pethe");
+	}
+
+	@Test(description = "Verifies if the valid user is able to login intothe application", groups = { "e2e",
+			"sanity" }, dataProviderClass = com.ui.dataproviders.LoginDataProvider.class, dataProvider = "LoginTestExcelDataProvider", retryAnalyzer = com.ui.listeners.MyRetryAnalyzer.class)
+	public void loginExcelTest(User user) {
+		//logger.info("Execution started");
+		assertEquals(homePage.goToLoginPage().doLoginWith(user.getEmailAdddress(), user.getPassword()).getUserName(),
+				"Prashant Pethe1");
+		//logger.info("Execution ended");
+	}
+//	@AfterMethod(description="closes the browser") 
+	public void tearDown() {
+		homePage.closeBrowser();
 	}
 
 }
