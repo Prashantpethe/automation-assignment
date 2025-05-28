@@ -13,13 +13,17 @@ import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.edge.EdgeOptions;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.firefox.FirefoxOptions;
 
 import com.constants.Browser;
 
-public abstract class BrowserUtility { // parent class marked with Abstract keyword
+public class BrowserUtility { // parent class marked with Abstract keyword
 	Logger logger = LoggerUtility.getLogger(this.getClass());
-	
+
 	private static ThreadLocal<WebDriver> driver = new ThreadLocal<WebDriver>();// bczof this update code to
 																				// driver.get()
 
@@ -67,6 +71,41 @@ public abstract class BrowserUtility { // parent class marked with Abstract keyw
 		// no need of else block with enum
 	}
 
+	public BrowserUtility(Browser browserName, boolean isHeadLess) {
+		logger.info("Browser launched" + browserName);
+		if (browserName == Browser.CHROME) { // notice how enums are compared
+			if (isHeadLess) {
+				ChromeOptions options = new ChromeOptions();
+				options.addArguments("--headless"); // in video its written as --headless=old but its crashing chrome so removed old
+				options.addArguments("--window-size=1920,1080");
+				// driver = new ChromeDriver();
+				driver.set(new ChromeDriver(options));
+			} else
+				driver.set(new ChromeDriver());
+		} else if (browserName == Browser.EDGE) {
+			if (isHeadLess) {
+				EdgeOptions options = new EdgeOptions();
+				options.addArguments("--headless=old");
+				options.addArguments("disable-gpu");
+				// driver = new ChromeDriver();
+				driver.set(new EdgeDriver(options));
+			} else
+				driver.set(new EdgeDriver());
+//			driver = new EdgeDriver();
+		}else if(browserName==Browser.FIREFOX)
+		{
+			if(isHeadLess) {
+				FirefoxOptions options = new FirefoxOptions();
+				options.addArguments("--headless=old");
+				driver.set(new FirefoxDriver(options));
+			}else
+				driver.set(new FirefoxDriver());
+		}
+		else
+			logger.error("invalid Browser name");
+		// no need of else block with enum
+	}
+
 	public void goToWebSite(String url) {
 		logger.info("Visting the website" + url);
 //		driver.get(url);
@@ -100,8 +139,8 @@ public abstract class BrowserUtility { // parent class marked with Abstract keyw
 	}
 
 	public void closeBrowser() {
-		driver.get().quit();
-		logger.info("closes browsr session");
+		driver.get().close();
+		logger.info("closes browser session");
 	}
 
 	public String takeScreenShot(String name) {
